@@ -1,0 +1,142 @@
+/* faq_styles.css */
+
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../Images/Vimage30.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    color: #333;
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Table styling */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+/* Ensure buttons in the table's 'Actions' column are on the same line */
+td button {
+    display: inline-block; /* Ensures buttons remain on the same line */
+    margin-right: 0px;    /* Adds spacing between the buttons */
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #d9edf7; /* Light blue on hover */
+}
+
+/* Button styling */
+button {
+    background-color: #3498db; /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Create button styling */
+a button {
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+/* Header Styles */
+
+.logo-container{
+    /* inline-level container, meaning it flows like inline content 
+   (i.e., doesn't start on a new line) but can have width and height like a block-level element.*/
+   display: inline-block; 
+}
+.logo-container .logo{
+    padding-left: 30px;
+   max-width: 100px;
+   height: 50px;
+}
+.header {
+    background-color: #0f044c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.nav-links ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.logout-section {
+    margin-right:20px;
+    padding-right: 10px;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}

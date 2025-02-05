@@ -1,0 +1,100 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../Images/Vimage30.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h2 {
+    font-size: 26px;
+    color: #333;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Flight List Container */
+.flight-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+/* Flight Item Card */
+.flight-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flight-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Flight Item Content */
+.flight-item p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.book-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #218838;
+}
+
+/* Error Message Styling */
+.error {
+    color: red;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flight-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flight-item {
+        width: 100%;
+        max-width: 600px;
+    }
+}

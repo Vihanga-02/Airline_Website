@@ -1,0 +1,205 @@
+/*basic page setup*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*Hero section*/
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*Hides any content that overflows the element's boundaries.*/
+    overflow: hidden;
+    /*set timing and loop type for background image slideshow in hero section*/
+    animation: changeBackground 25s ease-in-out infinite;
+    
+/*This keyframes animation changes the background image at different points.*/
+}
+@keyframes changeBackground {
+    0% {
+        background-image: url('../images/Vimage1.jpg');
+    }
+    20% {
+        background-image: url('../images/Vimage2.jpg');
+    }
+    40% {
+        background-image: url('../images/Vimage3.jpg');
+    }
+    60% {
+        background-image: url('../images/Vimage4.jpg');
+    }
+    80% {
+        background-image: url('../images/Vimage5.jpg');
+    }
+    100% {
+        background-image: url('../images/Vimage1.jpg');
+}
+}
+.hero-section::before{
+    /*content property to an empty string, 
+    meaning no text or symbol will be displayed. */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* The z-index is set to 2, meaning this element will 
+    appear above elements with lower z-index values in the stacking order. */
+    z-index: 2;
+}
+.hero-content{
+    position: relative;
+    z-index: 3;
+}
+.hero-content h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.hero-content h5{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.book-btn {
+    background-color: #00a524; /* Button background color */
+    color: white;
+    border: skyblue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    /* This code smoothly changes the background color over 0.3 seconds with an ease effect. */
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-btn::after {
+    content: " \2192"; /* Unicode for right arrow */
+    font-size: 25px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .book-btn:hover {
+    background-color: #005d00; /* Darken background on hover */
+    transform: scale(1.05);
+  }
+.hero-content p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #d4d4d4;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.highlights-section {
+    padding: 60px 20px;
+    background-color: #dbe7fc;
+    text-align: center;
+}
+.highlights-section h1 {
+    font-size: 3rem;
+    color: #0f044c; 
+    margin-bottom: 30px;
+    text-align: center; /* Center align */
+    letter-spacing: 2px; /* Add space between letters */
+    text-transform: uppercase; /* Make the text uppercase for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    padding-bottom: 10px;
+    border-bottom: 3px solid #011525; /* Underline effect with solid border */
+}
+
+.highlights-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;/*top and buttom margin 0 and right and left margin auto*/
+}
+
+.highlight-card {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    /* This code sets the base size of a flex item to 33% of its container's width, minus 20 pixels. */
+    flex-basis: calc(33% - 20px);
+    /* This code sets the maximum width of an element to 33% of its container's width, minus 20 pixels. */
+    max-width: calc(33% - 20px);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.highlight-card:hover {
+    transform: scale(1.05);
+}
+
+.highlight-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.highlight-card h3 {
+    font-size: 1.5rem;
+    margin: 20px;
+    color: #0f044c;
+}
+
+.highlight-card p {
+    font-size: 1rem;
+    margin: 0 20px 20px;
+    color: #333;
+}
+/* @media use to make webpage reponsive to browser size and device size*/
+  @media (max-width: 768px) {
+    .hero-section{
+        padding-top: 150px;
+        
+    }
+    .highlights-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight-card {
+        flex-direction: column;
+        margin-top: 15px;
+        align-items: center;
+        flex-basis: 100%;
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section{
+        padding-top: 50px;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    .book-btn {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+    .highlights-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../Images/Vimage30.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the color and transparency as needed */
+    background-blend-mode: overlay;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.update-btn, .delete-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.update-btn {
+    background-color: #00a524;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.update-btn:hover {
+    background-color: #018c1d;
+}
+
+.delete-btn {
+    background-color: #e60000;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

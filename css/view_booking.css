@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+h1 {
+    text-align: center;
+    color: #003366; /* Dark blue color for the heading */
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #00509e; /* Medium blue border */
+}
+
+th {
+    background-color: #007acc; /* Bright blue for table headers */
+    color: white; /* White text for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #e6f7ff; /* Light blue for even rows */
+}
+
+tr:hover {
+    background-color: #cceeff; /* Slightly darker blue on hover */
+}
+
+.error {
+    color: red; /* Error messages in red */
+}
+
+.success {
+    color: green; /* Success messages in green */
+}
+/* Header Styles */
+
+.logo-container{
+    /* inline-level container, meaning it flows like inline content 
+   (i.e., doesn't start on a new line) but can have width and height like a block-level element.*/
+   display: inline-block; 
+}
+.logo-container .logo{
+    padding-left: 30px;
+   max-width: 100px;
+   height: 50px;
+}
+.header {
+    background-color: #0f044c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.nav-links ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.logout-section {
+    margin-right:20px;
+    padding-right: 10px;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}

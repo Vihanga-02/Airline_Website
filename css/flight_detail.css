@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif; /* add syles to body tag*/
+    background-image: url('../images/FD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);  /*blending the image with bg color*/
+    background-blend-mode: overlay;
+    height: 120vh;
+    margin: 0;
+}
+.new{
+    display: flex;
+    justify-content: center;
+    align-items: center;     /* Vertical centering */
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #ffffff86;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color:#00172f;
+    margin-bottom: 20px;
+}
+
+.flight-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flight {
+    background-color: #c3dfff;
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.flight:hover {
+    transform: translateY(-10px);
+}
+
+.flight h3 {
+    color: #234d7a;
+    margin-bottom: 10px;
+}
+
+.flight p {
+    color: #333;
+    margin-bottom: 5px;
+}

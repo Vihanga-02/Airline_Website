@@ -1,0 +1,93 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("../Images/Vimage30.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the color and transparency as needed */
+    background-blend-mode: overlay;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the FAQ section */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #c3c1c1;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+/* Details and summary styles */
+details {
+    margin-bottom: 20px;
+    border: 1px solid #031065;
+    border-radius: 5px;
+    background-color: #031065;
+}
+
+summary {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    background-color: #0117a5;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+summary:hover {
+    background-color: #000b5f;
+}
+
+details[open] summary {
+    background-color: #031065;
+    color: #ffffff;
+}
+
+/* FAQ answer text */
+details p {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    summary {
+        font-size: 16px;
+    }
+
+    details p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,139 @@
+
+/*flight_schedules page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-image: url("../Images/Vimage30.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table{
+    width: 98%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,table td{
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table th{
+    background-color: #124d8b;
+    color: white;
+}
+
+table tr{
+    border-color: #f9f9f9;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(164, 16, 16);
+}
+button{
+    padding: 10px 15px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px; /*Add some margin between buttons*/
+}
+button:hover{
+    background-color: #0056b3;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.actions a:hover{
+    background-color: #0056b3;
+}
+.delete-button{
+    background-color: #dc3545;
+}
+.delete-button:hover{
+    background-color:#c82333;
+}
+
+/*create_schedule page*/
+/* Header Styles */
+
+.logo-container{
+    /* inline-level container, meaning it flows like inline content 
+   (i.e., doesn't start on a new line) but can have width and height like a block-level element.*/
+   display: inline-block; 
+}
+.logo-container .logo{
+    padding-left: 30px;
+   max-width: 100px;
+   height: 50px;
+}
+.header {
+    background-color: #0f044c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.nav-links ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.logout-section {
+    margin-right:20px;
+    padding-right: 10px;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../Images/signinbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    margin:0;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.container {
+    background: #ebebeb;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    flex: 1; 
+}
+
+h1 {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #003366;
+}
+
+p {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#log, #staffLogin {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #003cff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+#log:hover, #staffLogin:hover {
+    background-color: #001f98;
+}
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 1em;
+}
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 1px 0;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+    .signup-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 12px;
+        padding: 6px;
+    }
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+

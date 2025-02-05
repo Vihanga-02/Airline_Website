@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../Images/Vimage30.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.add-button {
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.table-container {
+    width: 80%;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #9d9d9d;
+    text-align: center;
+}
+
+th {
+    background-color: #0032fb;
+    color: white;
+}
+
+td {
+    background-color: #e1e1e1;
+}
+
+a {
+    text-decoration: none;
+    color: #0275d8;
+}
+
+a:hover {
+    background-color: #065e06;
+}
+
+/* Edit and Delete button styles */
+.action-buttons a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+    margin-right: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.edit-btn {
+    background-color: #233bf3; /* Green */
+}
+
+.edit-btn:hover {
+    background-color: #041c88;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red */
+}
+
+.delete-btn:hover {
+    background-color: #ad0f0c;
+}
+
+/* Header Styles */
+
+.logo-container{
+    /* inline-level container, meaning it flows like inline content 
+   (i.e., doesn't start on a new line) but can have width and height like a block-level element.*/
+   display: inline-block; 
+}
+.logo-container .logo{
+    padding-left: 30px;
+   max-width: 100px;
+   height: 50px;
+}
+.header {
+    background-color: #0f044c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.nav-links ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.logout-section {
+    margin-right:20px;
+    padding-right: 10px;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
